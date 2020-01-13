@@ -1,12 +1,13 @@
 function transform(baseArray) {
-  return baseArray.map((item, index) => {
+  return baseArray.map(function(item, index)  {
     return function() {
-      return baseArray[index];
+      return baseArray[index];  //return item
     }
   })
 }
 
 const baseArray = [10, 20, 30, 40, 50];
 const newArray = transform(baseArray);
-console.log(newArray[3]()); // should return 40
-console.log(newArray[4]()); // should return 50
+console.log(newArray[3]());
+console.log(newArray[4]());
+console.log(newArray[0]());

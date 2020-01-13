@@ -1,12 +1,12 @@
 function splitAndMerge(str, sp) {
   var words = str.split(" ");
 
-  var letters = words.map((item) => {
+  var letters = words.map(function(item) {
     return item.split("")
   })
   
   var arrOfLetters = [];
-  letters.forEach((item) => {
+  letters.forEach(function(item) {
     arrOfLetters = arrOfLetters.concat(item)
   })
   
