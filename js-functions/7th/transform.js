@@ -1,7 +1,7 @@
 function transform(baseArray) {
   return baseArray.map(function(item, index)  {
     return function() {
-      return baseArray[index];  //return item
+      return baseArray[index];  //or return item
     }
   })
 }

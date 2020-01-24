@@ -4,7 +4,7 @@ var obj = {
 };
 
 function convert(obj) {
-  return Object.entries(obj)
+  return Object.entries(obj);
 }
 
 console.log(convert(obj));
